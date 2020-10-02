@@ -115,7 +115,7 @@ section {
 }
 /* Hero Styles End */
 
-/*Section Style */
+/*Section and Border Style */
 .section-title {
     font-size: 55px;
     color: #024e76;
@@ -132,7 +132,7 @@ section {
 .secondary-border {
     border-color: #39a6b2;
 }
-/* Section Style End */
+/* Section and Border Style End */
 
 /* What We Do Styles Start */
 .intro {
@@ -219,7 +219,6 @@ section {
     font-size: 17px;
     line-height: 1.3;
 }
-
 /* Trainer Styles End */
 
 /* Reach Out Styles Start */
