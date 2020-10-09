@@ -202,7 +202,7 @@ section {
     flex: 12;
 }
 .step-text h4 {
-    font-size: 2px;
+    font-size: 26px;
     line-height: 1.5;
     color: #024e76;
 }
@@ -384,7 +384,26 @@ section {
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
-    
-        /* this will be applied on any screen smaller than 575px */
-        
+    /* this will be applied on any screen smaller than 575px */
+    .hero-form button {
+        width: 100%;
+    }
+    .section-title {
+        width: 95%;
+    }
+    .intro p {
+        width: 100%;
+    }
+    .trainer {
+        flex: 0 100%;
+    }
+    .contact-info {
+        text-align: center;
+    }
+    .contact-info > * {
+        flex: 0 100%;
+    }
+    .contact-form {
+        order: 3;
+    }
 }
