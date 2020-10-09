@@ -267,6 +267,31 @@ section {
     color: #024e76;
     font-size: 1.2rem;
 }
+.service-grid-item {
+    padding: 15px 0;
+    border: 2px solid #024e76;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+/* specific match */
+.service-grid-item.basic {
+    grid-column: 2 / span 1;
+}
+.service-grid-item.both {
+    grid-column: 2 / span 2;
+}
+.service-grid-item.cancel {
+    grid-row: 1 / -1;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+}
+.grid-head, .grid-price, .service-grid-item.cancel {
+font-size: 1.5rem;
+font-weight: bold;
+}
+/* Service Styles End */
 
 /* Reach Out Styles Start */
 .contact {
@@ -401,6 +426,22 @@ section {
     .step-text {
         flex: 100%;
     }
+    .service-grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+    .service-grid-item.basic {
+        grid-column: 1 / span 1;
+    }
+    .service-grid-item.both {
+        grid-column: 1 / span 2;
+    }
+    .service-grid-item.cancel {
+        writing-mode: unset;
+        transform: none;
+        grid-row: -1;
+        grid-column: 1 / -1;
+    }
+        
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
