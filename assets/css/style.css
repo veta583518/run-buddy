@@ -314,13 +314,28 @@ section {
 .trainer {
     margin: 20px;
     background: var(--secondary-color);
-    color: var(--primary);
+    color: var(--primary-color);
     flex: 1;
 }
-.trainer img {
+.trainer-img {
     width: 100%;
+    min-height: 300px;
+    display: flex;
+    padding: 15px;
+    align-items: flex-end;
 }
-
+.trainer-1 {
+    background-image: url("../images/trainer-1.jpg");
+    background-size: cover;
+}
+.trainer-2 {
+    background-image: url("../images/trainer-2.jpg");
+    background-size: cover;
+}
+.trainer-3 {
+    background-image: url("../images/trainer-3.jpg");
+    background-size: cover;
+}
 .trainer-bio {
     padding: 25px;
     line-height: 1.3;
